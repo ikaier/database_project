@@ -40,11 +40,11 @@
 SELECT COUNT(*) AS num FROM RECEIVER WHERE HINSURNUM='TEST00000000';
 ```
 
-![ai](/Users/houkai/Desktop/421 DB/P3/p3 pdf/ai.png)
+![ai](/ai.png)
 
 #### a ii.  
 
-<img src="/Users/houkai/Desktop/421 DB/P3/p3 pdf/aii.png" alt="aii" style="zoom: 50%;" />
+<img src="/aii.png" alt="aii" style="zoom: 50%;" />
 
 #### a iii. 
 
@@ -52,17 +52,17 @@ SELECT COUNT(*) AS num FROM RECEIVER WHERE HINSURNUM='TEST00000000';
 SELECT * FROM RECEIVER WHERE HINSURNUM='TEST00000000';
 ```
 
-![aiii](/Users/houkai/Desktop/421 DB/P3/p3 pdf/aiii.png)
+![aiii](/aiii.png)
 
 ```sql
 SELECT * FROM RECEIVER_PRIORITY WHERE HINSURNUM='TEST00000000';
 ```
 
-![aiii2](/Users/houkai/Desktop/421 DB/P3/p3 pdf/aiii2.png)
+![aiii2](/aiii2.png)
 
 #### a iv.
 
-![aiv](/Users/houkai/Desktop/421 DB/P3/p3 pdf/aiv.png)
+![aiv](/aiv.png)
 
 #### a v.
 
@@ -70,13 +70,13 @@ SELECT * FROM RECEIVER_PRIORITY WHERE HINSURNUM='TEST00000000';
 SELECT * FROM RECEIVER WHERE HINSURNUM='TEST00000000';
 ```
 
-![av2](/Users/houkai/Desktop/421 DB/P3/p3 pdf/av2.png)
+![av2](/av2.png)
 
 ```sql
 SELECT * FROM RECEIVER WHERE HINSURNUM='TEST00000000';
 ```
 
-![av1](/Users/houkai/Desktop/421 DB/P3/p3 pdf/av1.png)
+![av1](/av1.png)
 
 ### b
 
@@ -90,11 +90,11 @@ WHERE t1.HINSURNUM='TEST00000003' GROUP BY t1.HINSURNUM
 ;
 ```
 
-![bi](/Users/houkai/Desktop/421 DB/P3/p3 pdf/bi.png)
+![bi](/bi.png)
 
 #### b ii.
 
-<img src="/Users/houkai/Desktop/421 DB/P3/p3 pdf/bii.png" alt="bii" style="zoom:50%;" />
+<img src="/bii.png" alt="bii" style="zoom:50%;" />
 
 #### B iii.
 
@@ -102,11 +102,11 @@ WHERE t1.HINSURNUM='TEST00000003' GROUP BY t1.HINSURNUM
 SELECT * FROM ALLOCATE_SLOT WHERE HINSURNUM='TEST00000003';
 ```
 
-![biii](/Users/houkai/Desktop/421 DB/P3/p3 pdf/biii.png)
+![biii](/biii.png)
 
 #### B iv
 
-<img src="/Users/houkai/Desktop/421 DB/P3/p3 pdf/bvi.png" alt="bvi" style="zoom: 50%;" />
+<img src="/bvi.png" alt="bvi" style="zoom: 50%;" />
 
 #### b v.
 
@@ -114,7 +114,7 @@ SELECT * FROM ALLOCATE_SLOT WHERE HINSURNUM='TEST00000003';
 SELECT * FROM ALLOCATE_SLOT WHERE HINSURNUM='TEST00000003';
 ```
 
-![bv](/Users/houkai/Desktop/421 DB/P3/p3 pdf/bv.png)
+![bv](/bv.png)
 
 ### C
 
@@ -126,7 +126,7 @@ FROM VACCINE_BATCH WHERE VACCINE_NAME='Moderna COVID-19 Vaccine'
 GROUP BY VACCINE_NAME, REQUIRED_DOES_QUANTITY;
 ```
 
-![ci](/Users/houkai/Desktop/421 DB/P3/p3 pdf/ci.png)
+![ci](/ci.png)
 
 #### c ii.
 
@@ -140,11 +140,11 @@ GROUP BY t1.HINSURNUM, VACCINE_NAME, num_shot
 ;
 ```
 
-![cii](/Users/houkai/Desktop/421 DB/P3/p3 pdf/cii.png)
+![cii](/cii.png)
 
 #### c iii.
 
-<img src="/Users/houkai/Desktop/421 DB/P3/p3 pdf/ciii.png" alt="ciii" style="zoom:50%;" />
+<img src="/ciii.png" alt="ciii" style="zoom:50%;" />
 
 #### c iv.
 
@@ -157,13 +157,13 @@ GROUP BY t1.PLACE_NAME, t1.DATE, t1.SLOT_TIME
 ;
 ```
 
-![civ](/Users/houkai/Desktop/421 DB/P3/p3 pdf/civ.png)
+![civ](/civ.png)
 
 ### d
 
 #### d i.
 
-<img src="/Users/houkai/Desktop/421 DB/P3/p3 pdf/di.png" alt="di" style="zoom: 50%;" />
+<img src="/di.png" alt="di" style="zoom: 50%;" />
 
 #### d ii
 
@@ -175,7 +175,7 @@ FROM VACCINE_DOES
 WHERE VB.BATCH_NUMBER='88888888' AND VB.VACCINE_NAME='Moderna COVID-19 Vaccine';
 ```
 
-![dii](/Users/houkai/Desktop/421 DB/P3/p3 pdf/dii.png)
+![dii](/dii.png)
 
 ### e
 
@@ -189,15 +189,15 @@ WHERE t1.HINSURNUM='TEST00000006' GROUP BY t1.HINSURNUM,t2.VACCINE_NAME
 ;
 ```
 
-![ei](/Users/houkai/Desktop/421 DB/P3/p3 pdf/ei.png)
+![ei](/ei.png)
 
 #### e ii.
 
-<img src="/Users/houkai/Desktop/421 DB/P3/p3 pdf/eii.png" alt="eii" style="zoom:50%;" />
+<img src="/eii.png" alt="eii" style="zoom:50%;" />
 
 #### e iii.
 
-<img src="/Users/houkai/Desktop/421 DB/P3/p3 pdf/eiii.png" alt="eiii" style="zoom:45%;" />
+<img src="/eiii.png" alt="eiii" style="zoom:45%;" />
 
 
 
@@ -209,7 +209,7 @@ ON receiver(phone)
 ;
 ```
 
-![idx](/Users/houkai/Desktop/421 DB/P3/p3 pdf/idx.png)
+![idx](/idx.png)
 
  If we assume everyone has an unique phone numberWe can add index on phone attribute. Database will sort the table according to the phone number.
 
@@ -230,7 +230,7 @@ SELECT FIRST_DOES_DATE, COUNT(*) AS num_people FROM(
 SELECT HINSURNUM, MIN(DOES_DATE) AS FIRST_DOES_DATE FROM VACCINE_DOES GROUP BY HINSURNUM) GROUP BY FIRST_DOES_DATE;
 ```
 
-![data](/Users/houkai/Desktop/421 DB/P3/p3 pdf/data.png)
+![data](/data.png)
 
-![image-20210315150859792](/Users/houkai/Library/Application Support/typora-user-images/image-20210315150859792.png)
+
 
